@@ -32,6 +32,7 @@ namespace Assignment.Data.Impl
 
         public Users ValidateUsers(string userName, string Password)
         {
+            // Find user in the array
             Users first = users.FirstOrDefault(user => user.UserName.Equals(userName));
             if (first == null)
             {
